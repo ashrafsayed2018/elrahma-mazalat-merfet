@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هناجر مستودعات ديكورات خارجيه مظلات سواتر برجولات وجميع أنواع الحداده  مؤسسة بناء الموده</title>
+  <!-- Add Tailwind CSS here -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@5.4.5/css/swiper.min.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+
+
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body
+    class=" w-full
+      antialiased
+      bg-gray-100
+      
+    "
+  >
+  <header class="w-full bg-white shadow-md">
+     <nav
+        class="
+          w-10/12
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+          py-4
+          md:py-0
+          px-4
+          text-lg text-gray-700
+         
+        "
+      >
+       <div>
+          <a href="/">
+            <img src="../img/logo.png" alt="" class="w-16 h-12">
+          </a>
+        </div>
+       
+         <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+       
+       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="
+              text-base text-gray-700
+              md:flex
+              md:justify-between
+              flex-row-reverse 
+              md:py-2"
+          >
+            <li>
+              <a class="p-2 block hover:bg-blue-900 hover:text-white h-10 rounded-lg text-right" href="#" data-scroll="home"
+                >الرئيسيه</a
+              >
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-blue-900 hover:text-white h-10 rounded-lg text-right" href="#" data-scroll="services"
+                >خدماتنا</a
+              >
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-blue-900 hover:text-white h-10 rounded-lg text-right hover:text-white" href="#" data-scroll="work"
+                >اعمالنا</a
+              >
+            </li>
+            <li>
+              <a class="p-2 block hover:bg-blue-900 hover:text-white h-10 rounded-lg text-right hover:text-white" href="#" data-scroll="contact"
+                >اتصل بنا</a
+              >
+            </li>
+         
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+
+  <section class="hero py-10" id="home">
+    <h2 class="text-center font-bold text-blue-900 text-lg lg:text-2xl my-4">  مؤسسة بناء الموده  </h2>
+    <p class="text-blue-800 text-center mb-10 font-normal text-lg px-8 lg:px-0 leading-10"> مقاولات هناجر مستودعات ديكورات خارجيه مظلات سواتر برجولات وجميع أنواع الحداده</p>
+    <div x-data="{swiper: null}"
+  x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 1000, // set delay time in milliseconds
+        disableOnInteraction: false, // prevent autoplay from stopping on interaction
+
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
+    })"
+  class="relative w-11/12 lg:w-10/12 h-96  mx-auto flex flex-row"
+>
+  <div class="absolute inset-y-0 left-0 z-10 flex items-center h-full">
+    <button @click="swiper.slidePrev()" 
+            class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+
+  <div class="swiper-container h-full" x-ref="container">
+    <div class="swiper-wrapper h-full">
+      <!-- Slides -->
+      <div class="swiper-slide p-4 h-full">
+        <div class="flex flex-col rounded shadow overflow-hidden h-full">
+          <div class="flex-shrink-0 h-full">
+            <img class="h-full w-full object-cover" src="../img/logo.png" alt="">
+          </div>
+        </div>
+      </div>
+              
+      <div class="swiper-slide p-4 h-full">
+        <div class="flex flex-col rounded shadow overflow-hidden h-full">
+          <div class="flex-shrink-0 h-full">
+            <img class="h-full w-full object-cover" src="../img/سواتر/1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide p-4 h-full">
+        <div class="flex flex-col rounded shadow overflow-hidden h-full">
+          <div class="flex-shrink-0 h-full">
+            <img class="h-full w-full object-cover" src="../img/دربزينات/1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide p-4 h-full">
+        <div class="flex flex-col rounded shadow overflow-hidden h-full">
+          <div class="flex-shrink-0 h-full">
+            <img class="h-full w-full object-cover" src="../img/ديكورات/1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide p-4 h-full">
+        <div class="flex flex-col rounded shadow overflow-hidden h-full">
+          <div class="flex-shrink-0 h-full">
+            <img class="h-full w-full object-cover" src="../img/سواتر/2.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+    <button @click="swiper.slideNext()" 
+            class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+    </div>
+  </section>
+
+  <!-- article section  -->
+
+  <section class="article  w-11/12 lg:w-10/12 my-10 mx-auto ">
+    <div class="bg-white overflow-hidden shadow rounded-lg">
+        <img class="h-96 w-full object-cover" src="../img/%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%D8%A7%D8%AA/1.jpg" alt="تركيب المستودعات بالسعوديه">
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-gray-600">
+                <i class="fa fa-clock"></i>
+                <strong class="date"></strong>
+                <script>
+                    document.querySelector(".date").innerHTML = new Date().toLocaleDateString()
+                 </script>
+            </p>
+          </div>
+          <div class="mt-4">
+            <h1 class="text-3xl leading-9 font-bold text-gray-900">تركيب المستودعات بالسعوديه</h1>
+            <p class="mt-2 text-lg leading-7 text-gray-500">
+                يعتبر قطاع المستودعات من أهم القطاعات الاقتصادية في المملكة العربية السعودية، حيث يلعب دورًا حيويًا في تحقيق الاستدامة الاقتصادية والتنمية المستدامة في المملكة. ولتحقيق هذا الهدف، يجب تصميم وتركيب المستودعات بطريقة تتناسب مع المتطلبات المحلية والعالمية.
+
+يتم تصميم المستودعات بشكل يتناسب مع الغرض منها، حيث يمكن أن تكون المستودعات مخصصة لتخزين المواد الغذائية أو المنتجات الصناعية أو الأدوية أو غيرها من المواد. كما يتم تصميمها بطريقة تسمح بتخزين المواد بطريقة آمنة وفعالة، وتوفير ظروف التخزين المثلى للمواد.
+
+وتتميز المستودعات في السعودية بتقنيات حديثة ومتطورة، حيث تستخدم أحدث التقنيات في تصميم وتركيب المستودعات، مثل تقنيات التحكم في درجة الحرارة والرطوبة وتقنيات الأتمتة والروبوتات. وتستخدم أيضًا تقنيات حديثة في الأمان والسلامة، حيث تتبع معايير دولية للسلامة والأمان في تصميم وتركيب المستودعات.
+
+وتتميز المستودعات في السعودية بالحجم الكبير والتوافر الوفير، حيث يمكن العثور على المستودعات بأحجام تتراوح بين الآلاف والملايين من المترات المربعة. كما تتميز المستودعات في السعودية بالموقع الجيد، حيث توجد في مناطق استراتيجية تسمح بسهولة الوصول إلى المستودعات وتوفير الخدمات اللوجستية المثلى.
+
+ومن الجدير بالذكر أن تصميم وتركيب المستودعات في المملكة العربية السعودية يخضع لمجموعة من الأنظمة واللوائح والمعايير المحددة، لضمان جودة المستودعات والحفاظ على سلامة المواد التي يتم تخزينها بها. ويجب توفير العديد من المتطلبات في تصميم وتركيب المستودعات، مثل الأمان والسلامة والتهوية الجيدة ونظام إطفاء الحرائق ونظام الإضاءة المناسب ونظام التحكم في درجة الحرارة والرطوبة والعديد من الأمور الأخرى.
+
+كما يجب توفير نظام إدارة للمستودعات، لضمان تنظيم عمليات الإدارة والمراقبة والصيانة والتشغيل بشكل فعال. وعلاوة على ذلك، يجب الاهتمام بالتدريب والتطوير للعاملين في المستودعات، لتحقيق أعلى مستويات الكفاءة والجودة والسلامة في العمل.
+
+وتتوافر في السعودية العديد من الشركات والمصنعين المتخصصين في تصميم وتركيب المستودعات، ويمكن للشركات والمؤسسات الاستفادة من خبراتهم وخدماتهم في هذا المجال. كما تقدم الحكومة السعودية الدعم والتسهيلات للشركات والمؤسسات لتصميم وتركيب المستودعات، وذلك بهدف تشجيع الاستثمار في هذا القطاع وتحقيق التنمية المستدامة في المملكة.
+
+وفي النهاية، يمكن القول إن تصميم وتركيب المستودعات في المملكة العربية السعودية هو عملية مهمة وحيوية للشركات والمؤسسات التي تعمل في مجال التخزين والتوزيع. ويجب أن تتم هذه العملية بما يتوافق مع المعايير واللوائح المحددة لضمان سلامة المواد المخزنة وحفاظها على جودتها.
+
+كما يجب أن يتم الاهتمام بعدة عوامل في تصميم المستودعات،
+            </p>
+          </div>
+  </section>
+
+
+   <!-- footer section -->
+   <section class="w-full bg-gray-800" id="contact">
+    <footer class="lg:w-10/12 mx-auto text-white py-12">
+      <div class="mx-auto flex flex-wrap gap-y-10 text-center justify-center">
+        <div class="w-full md:w-1/3">
+          <h3 class="mb-8 text-2xl text-center">مواقع التواصل</h3>
+          <ul class="list-reset flex flex-col gap-y-8 items-center">
+            <li class="w-40">
+              <a href="https://www.instagram.com/fyzlmlq/" class="text-white hover:text-blue-500 flex gap-x-8 justify-around items-center">
+                <i class="fab fa-instagram fa-lg"></i>
+                <span>انستقرام</span>
+              </a>
+            </li>
+            <li class=" w-40">
+              <a href="/" class="text-white hover:text-blue-500 flex gap-x-8 flex justify-around items-center">
+                <i class="block fab fa-twitter fa-lg -ml-2"></i>
+                <span class=""> تويتر</span>
+              </a>
+            </li>
+            <li class="w-40">
+              <a href="tel:0531917170" class="text-white hover:text-blue-500 flex gap-x-8 justify-around items-center">
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <span>فيس بوك</span>
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3 text-center md:text-left">
+          <h3 class="mb-8 text-2xl">تواصل معنا </h3>
+          <ul class="list-reset">
+            <li class="mb-4">
+              <a href="tel:0531917170" class="text-white hover:text-blue-500">
+                <i class="fas fa-mobile-alt ml-2"></i> 0531917170
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="https://wa.me/9660531917170" class="text-white hover:text-blue-500">
+                <i class="fab fa-whatsapp ml-2"></i> 0531917170
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="" class="text-white hover:text-blue-500">
+                <i class="fas fa-envelope mr-2"></i> ايميل مؤسسة بناء الموده
+              </a>
+            </li>
+       
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3 mx-auto text-center md:text-center ">
+          <h3 class="mb-8 text-2xl">عن المؤسسه</h3>
+          <div class="flex flex-col justify-center items-center">
+            <div class="mb-4">
+              <img src="../img/logo.png" class="w-20 h-20" alt="Company Logo">
+            </div>
+            <div class="mb-4">
+              <p>بناء الموده</p>
+            </div>
+            <div>
+              <p>الكويت<br>العاصمه</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </footer>
+  </section>
+  
+
+
+   <!-- fixed call buttons -->
+   <div class="fixed-call-buttons w-11/12 lg:w-10/12 fixed bottom-20 right-4 flex justify-start  z-50">
+         <div class="flex flex-col gap-y-6">
+           <!-- fiexd call -->
+            <div class="w-12 h-12">
+              <a href="tel:0531917170" class="block bg-blue-500 hover:bg-blue-900 text-white font-bold h-full w-full rounded-full bouncing flex items-center justify-center">
+                <i class="fas fa-phone fa-lg"></i>
+              </a>
+            </div>
+  
+            <!-- fixed whatsapp -->
+            <div class="w-12 h-12">
+              <a href="https://wa.me/9660531917170" class="block bg-blue-500 hover:bg-blue-700 text-white font-bold h-full w-full rounded-full bouncing flex items-center justify-center">
+                <i class="fab fa-whatsapp text-white fa-lg"></i>
+              </a>
+            </div>
+         </div>
+   </div>
+
+    <!-- fixed bottom navigation bar -->
+
+    <nav class="fixed-bottom-nav fixed bottom-3 shadow-lg rounded-3xl left-0 right-0 bg-white w-10/12  mx-auto z-40">
+        <div class="flex justify-between w-full">
+        <a href="#home" class="w-1/4 text-center hover:bg-blue-900 hover:text-white transition-all ease-in-out duration-500 rounded-3xl" >
+            <i class="fas fa-home fa-sm lg:fa-lg mb-2"></i>
+            <p class="text-xs lg:text-sm">الرئيسيه</p>
+        </a>
+        <a href="#services" class="w-1/4 text-center hover:bg-blue-900 hover:text-white transition ease-in-out duration-500 rounded-3xl" >
+            <i class="fas fa-toolbox fa-sm lg:fa-lg mb-2"></i>
+            <p class="text-xs lg:text-sm">خدماتنا</p>
+        </a>
+        <a href="#work" class="w-1/4 text-center hover:bg-blue-900 hover:text-white transition ease-in-out duration-500 rounded-3xl">
+            <i class="fas fa-suitcase fa-sm lg:fa-lg mb-2"></i>
+            <p class="text-xs lg:text-sm">اعمالنا</p>
+        </a>
+        <a href="#contact" class="w-1/4 text-center hover:bg-blue-900 hover:text-white transition ease-in-out duration-500 rounded-3xl ">
+            <i class="fas fa-phone fa-sm lg:fa-lg mb-2"></i>
+            <p class="text-xs lg:text-sm">اتصل بنا</p>
+        </a>
+        
+        </div>
+    </nav>
+  
+
+  <script src="js/script.js"></script>
+
+
+<!-- <script
+    src="https://sleekflow.io/whatsapp-button.js"
+    async
+    onLoad="whatsappButton({
+    buttonName:'تواصل معنا',
+    buttonIconSize: '22',
+    brandImageUrl:'https://sleekflow.io/static/images/sleekflow-icon.png',
+    buttonMargin:'true',
+    brandName:'اعلانات',
+    brandSubtitleText:'في العاده نرد خلال ساعات',
+    buttonSize:'medium',
+    callToAction:'بداء الدردشه',
+    phoneNumber:'201151164360',
+    welcomeMessage:'مرحبا بك 👋',
+    })"
+    >
+</script> -->
+</body>
+
+</html>
